@@ -457,3 +457,55 @@ margin-bottom: 15px;
 
 
 }
+html {
+    scroll-behavior: smooth;
+  }
+
+/* Estilo para el header, que tiene la imagen de fondo */
+.header {
+    background-image: url('Images/bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Esto asegura que la imagen se quede fija al hacer scroll */
+    height: 100vh; /* Asegura que la imagen de fondo ocupe toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Estilos generales para las secciones */
+.general {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Asegurando que el fondo del header no sea afectado */
+#productos, #servicios, #informacion {
+    background: none;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .header {
+        background-size: cover;
+    }
+    .general {
+        padding: 20px;
+    }
+}
+
+/* Estilos para los enlaces en la barra de navegación */
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
